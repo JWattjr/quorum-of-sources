@@ -1,0 +1,29 @@
+[
+  {
+    "step": "open",
+    "hash": "0xc9eb9620abd7bfde49d2017cd172fac867ef0c6559aa7277c9254888258e823a",
+    "status": "Finalized · Accepted",
+    "consensus": "MAJORITY_AGREE",
+    "leader_execution": "SUCCESS",
+    "votes": "agree,agree,agree,idle,idle",
+    "explorer": "https://explorer-studio.genlayer.com/tx/0xc9eb9620abd7bfde49d2017cd172fac867ef0c6559aa7277c9254888258e823a"
+  },
+  {
+    "step": "append",
+    "hash": "0x95a0a810f5168af6c0983d36aa2bf9a61100eabf89c3cd6999b9c7c6cc3962c3",
+    "status": "Finalized · Accepted",
+    "consensus": "MAJORITY_AGREE",
+    "leader_execution": "SUCCESS",
+    "votes": "agree,idle,idle,agree,agree",
+    "explorer": "https://explorer-studio.genlayer.com/tx/0x95a0a810f5168af6c0983d36aa2bf9a61100eabf89c3cd6999b9c7c6cc3962c3"
+  },
+  {
+    "step": "adjudicate",
+    "hash": "0x7c466ad9b37e0413110784e760d308c64fdd4c5b96131e5003f2132c3fef4fe3",
+    "status": "Finalized · Accepted",
+    "consensus": "MAJORITY_AGREE",
+    "leader_execution": "SUCCESS",
+    "votes": "agree,agree,agree,disagree,idle",
+    "explorer": "https://explorer-studio.genlayer.com/tx/0x7c466ad9b37e0413110784e760d308c64fdd4c5b96131e5003f2132c3fef4fe3"
+  }
+]

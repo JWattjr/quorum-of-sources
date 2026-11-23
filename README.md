@@ -28,6 +28,13 @@ The separate NASA Apollo 11 case used `FETCH` mode against the NASA-hosted Lunar
 - Receipt summary: [`proofs/receipts/adjudicate-apollo11-public-consensus.json`](proofs/receipts/adjudicate-apollo11-public-consensus.json)
 - Raw CLI receipt: [`proofs/receipts/adjudicate-apollo11-public.txt`](proofs/receipts/adjudicate-apollo11-public.txt)
 
+### Second real-source case: CPython docs (finalized, no origin counted)
+
+Case `distutils-removal` on the same registry used one pinned file: `python/cpython` `Doc/library/distutils.rst` at commit `0ada998e…` (HTTP 200, 667 raw bytes, SHA-256 `8c44b643…8156`), claim "Python removed the distutils module from its standard library in Python 3.12." The adjudication **finalized with MAJORITY_AGREE (3 agree, 1 disagree, 1 idle)** and the decision persisted: `claim_supports: true`, `first_hand: false`, `origin_id: unknown`, so **count 0, not qualified**. Validators agreed the passage supports the claim but is documentation that states the outcome without positively showing a first-hand observation by an identifiable origin, so the contract counted nothing. This shows fail-closed behavior on a real source, not a positive quorum; positive counts (1 then 2 origins) are shown only on the authored fixtures. It was run once and not tuned or retried.
+
+- [open_case](https://explorer-studio.genlayer.com/tx/0xc9eb9620abd7bfde49d2017cd172fac867ef0c6559aa7277c9254888258e823a), [append_document](https://explorer-studio.genlayer.com/tx/0x95a0a810f5168af6c0983d36aa2bf9a61100eabf89c3cd6999b9c7c6cc3962c3), [adjudicate](https://explorer-studio.genlayer.com/tx/0x7c466ad9b37e0413110784e760d308c64fdd4c5b96131e5003f2132c3fef4fe3)
+- Receipts, vote splits and the persisted readback: [`proofs/real_source_cpython/`](proofs/real_source_cpython/)
+
 ## Design
 
 - `contracts/quorum_registry.py` freezes one claim per case, caps cases at 4 evidence documents, rejects duplicate IDs/references/digests, sorts the manifest for deterministic revision IDs, and preserves prior decisions.
@@ -59,7 +66,7 @@ $env:GENLAYER_CLI_ENTRY = 'C:\path\to\node_modules\genlayer\dist\index.js'
 python scripts\demo.py
 ```
 
-The opt-in integration test calls the same live demo and stops at its locked-consumer precondition on this already-unlocked deployment. It is gated by `QUORUM_LIVE=1`; run it only with fresh contracts/state. No mainnet, paid service, publication, or Portal submission was used.
+The opt-in integration test calls the same live demo and stops at its locked-consumer precondition on this already-unlocked deployment. It is gated by `QUORUM_LIVE=1`; run it only with fresh contracts/state. No mainnet, paid service, or Portal submission was used. Source repository: https://github.com/JWattjr/quorum-of-sources; both deployed contracts match the pushed files byte for byte (registry SHA-256 `dd90b658…6160`, consumer `f58c0f74…7b36`).
 
 ## Handoff
 
