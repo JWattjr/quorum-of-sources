@@ -1,0 +1,39 @@
+{
+  "network": "StudioNet",
+  "explorer_transaction": "https://explorer-studio.genlayer.com/tx/0xf576cd8f73a32d04b82785ee948c79eb5c53c3f32092af7d5839771033d8152e",
+  "transaction_hash": "0xf576cd8f73a32d04b82785ee948c79eb5c53c3f32092af7d5839771033d8152e",
+  "transaction_status": "FINALIZED",
+  "consensus_status": "UNDETERMINED",
+  "consensus_round": 0,
+  "votes_committed": 5,
+  "votes_revealed": 5,
+  "validator_votes": {
+    "0x1B490819e040562a5fb40CD64B1c70D4419c38d1": "DISAGREE",
+    "0x4eeaD269a60bB89c98a23c1BCd0bd101CafD90E0": "AGREE",
+    "0x5e880d85a70De78dDEf86236d57c42e73F560615": "DISAGREE",
+    "0x88E148Da14d45c5a5DD2DB25E776eBCBCe0Df539": "DISAGREE",
+    "0xe358f855C96d8E7243836cf986eb037175B9467e": "IDLE"
+  },
+  "leader_execution": "FINISHED_WITH_RETURN",
+  "leader_proposal": {
+    "count": 1,
+    "qualified": false,
+    "verified_origin_ids": ["origin_apollo11_crew"],
+    "claim_quote": "Landing site: Sea of Tranquility.",
+    "origin_quote": "HOUSTON, TRANQUILITY BASE HERE. THE EAGLE HAS LANDED."
+  },
+  "registry_readback_after_finalization": {
+    "revision_id": "",
+    "count": 0,
+    "qualified": false,
+    "is_current": false
+  },
+  "retry_performed": false,
+  "diagnostic": {
+    "observed": "The leader's proposal treated a quoted Apollo 11 crew transmission as first-hand origin evidence for the NASA-hosted page's landing-site statement. The explorer exposes the validator votes but not the validators' individual semantic rationales.",
+    "likely_ambiguity": "Whether the quoted crew transmission is sufficient positive evidence that the passage itself provides first-hand support for the exact landing-site claim.",
+    "certainty": "Inference only; the receipt does not reveal the disagreeing validators' local output."
+  },
+  "raw_receipt_file": "proofs/receipts/adjudicate-apollo11-public.txt",
+  "submission_error_transcript": "proofs/receipts/adjudicate-apollo11-public-submission-error.txt"
+}

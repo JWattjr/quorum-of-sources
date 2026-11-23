@@ -1,0 +1,17 @@
+{
+  "case_id": "apollo11-public",
+  "claim": "Apollo 11's lunar landing site was the Sea of Tranquility.",
+  "source_mode": "FETCH",
+  "authorship": "NASA-hosted Apollo 11 Lunar Surface Journal mission overview; no individual byline is listed.",
+  "source_ref": "https://www.nasa.gov/wp-content/uploads/static/history/alsj/a11/a11ov.html",
+  "content_sha256": "0e4db52d8496a0904eb14901c0eb5a52fddf6108698f938482e7aabb0d1b737a",
+  "passage_id": "nasa-a11-landing-site",
+  "passage": "HOUSTON, TRANQUILITY BASE HERE. THE EAGLE HAS LANDED.\"--July 20, Landing site: Sea of Tranquility.",
+  "candidate_origins": [
+    {
+      "origin_id": "origin_apollo11_crew",
+      "description": "Apollo 11 crew report quoted in the NASA mission overview."
+    }
+  ],
+  "retrieval_note": "Digest computed over the 1,772-byte public HTTP response on 2026-11-23. The target-network request must verify this digest and exact passage before adjudication."
+}

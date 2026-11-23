@@ -1,0 +1,14 @@
+{
+  "kind": "pre-consensus EVM submission rejection; not a GenLayer consensus receipt",
+  "network": "StudioNet",
+  "chain_id": 61999,
+  "failed_submission_hash": "0x2dcae985f8cbd9b510a026660ecedc5dd474ae776b5c042190346269dca637df",
+  "consensus_contract": "0xb7278A61aa25c888815aFC32Ad3cC52fF24fE575",
+  "eth_getTransactionReceipt": {
+    "status": "0x0",
+    "blockNumber": "0x0",
+    "gasUsed": "0x0"
+  },
+  "diagnosis": "The first CLI deployment supplied no fee distribution or feeValue. A read-only sim_getFeeConfig probe then confirmed fees are enabled and returned the network's default distribution and quoted feeValue. The live demo now reads that policy and supplies it to each deploy/write.",
+  "genlayer_receipt_lookup": "The failed EVM hash is not a GenLayer transaction id; genlayer receipt timed out with current status NaN. No validator consensus ran."
+}

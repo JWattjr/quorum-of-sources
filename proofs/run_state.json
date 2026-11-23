@@ -1,0 +1,685 @@
+{
+  "network": {
+    "alias": "studionet",
+    "chain_id": 61999
+  },
+  "tooling": {
+    "genlayer_cli": "0.40.0-rc2"
+  },
+  "transactions": [
+    {
+      "label": "deploy-registry",
+      "hash": "0xb525b5e2a2c86a94e31d07b092a8e70cff9900fa04125cc3ec7e986607960c15",
+      "status": "FINALIZED",
+      "contract_address": "0x610CCe277eaca01145D0A56dB0100D21026aCEa1",
+      "execution_result": "SUCCESS"
+    },
+    {
+      "label": "deploy-consumer",
+      "hash": "0x7421905de4857a4b8dc309b7da154772d0acdf0b8238223a0cc3141906cf4c70",
+      "status": "FINALIZED",
+      "contract_address": "0x6B5ce09B9B81E8AE4803087A1AB3F65917Bfe775",
+      "execution_result": "SUCCESS"
+    },
+    {
+      "label": "open-apollo11-public-case",
+      "hash": "0x4921a79107c8b80ef0e3319ba991c9782b817ad015e126e3cec4c6478b5d9d21",
+      "status": "FINALIZED",
+      "execution_result": "SEE_READBACK"
+    },
+    {
+      "label": "append-apollo11-nasa",
+      "hash": "0xa1bd0fd8d3f6c1971931dc580b5c0c6a1c076f5104587756708ca6a8e224758a",
+      "status": "FINALIZED",
+      "execution_result": "SEE_READBACK"
+    },
+    {
+      "label": "adjudicate-apollo11-public",
+      "hash": "0xf576cd8f73a32d04b82785ee948c79eb5c53c3f32092af7d5839771033d8152e",
+      "status": "FINALIZED",
+      "execution_result": "SUCCESS",
+      "consensus_result": "UNDETERMINED",
+      "receipt_file": "proofs/receipts/adjudicate-apollo11-public.txt"
+    },
+    {
+      "label": "append-gauge-demo-a",
+      "hash": "0x42b91878ee5df9cb68b0f9c1548e3b24df4035d374e0a55f057cc4062b685074",
+      "status": "FINALIZED",
+      "execution_result": "SEE_READBACK"
+    },
+    {
+      "label": "append-gauge-demo-b",
+      "hash": "0xf8366141f8792b7363643c1876f2e6717f1304f9491e0f7f431dddeed9023163",
+      "status": "FINALIZED",
+      "execution_result": "SEE_READBACK"
+    },
+    {
+      "label": "append-gauge-demo-c",
+      "hash": "0x21c0eeb175437870fd4dd454357727003a8078d99ef3d69cce5fe65e0f5048ad",
+      "status": "FINALIZED",
+      "execution_result": "SEE_READBACK"
+    },
+    {
+      "label": "adjudicate-gauge-below-threshold",
+      "hash": "0xac5ab3480e2e4e4a0b89b7eeba321d2572530442ff965c16f985a47616faf43d",
+      "status": "FINALIZED",
+      "execution_result": "SEE_READBACK"
+    },
+    {
+      "label": "append-gauge-demo-d",
+      "hash": "0x4e9982093a57d1729a0c0053e45899ec4f392bd826166239454677e8edf91c6c",
+      "status": "FINALIZED",
+      "execution_result": "SEE_READBACK"
+    },
+    {
+      "label": "adjudicate-gauge-above-threshold",
+      "hash": "0xf69e0438a6c23899ecd07ddde0545fded5f9b2aeb8790dcce9182da5282ba801",
+      "status": "FINALIZED",
+      "execution_result": "SEE_READBACK"
+    },
+    {
+      "label": "unlock-consumer-entitlement",
+      "hash": "0xd46b362c7d23ae45a671d779300b86bda597e61a263e214bc4d1e182f18b9ecb",
+      "status": "FINALIZED",
+      "execution_result": "SEE_READBACK"
+    }
+  ],
+  "contracts": {
+    "registry": {
+      "address": "0x610CCe277eaca01145D0A56dB0100D21026aCEa1",
+      "explorer_url": "https://explorer-studio.genlayer.com/address/0x610CCe277eaca01145D0A56dB0100D21026aCEa1"
+    },
+    "consumer": {
+      "address": "0x6B5ce09B9B81E8AE4803087A1AB3F65917Bfe775",
+      "explorer_url": "https://explorer-studio.genlayer.com/address/0x6B5ce09B9B81E8AE4803087A1AB3F65917Bfe775"
+    }
+  },
+  "readbacks": {
+    "consumer_initial": {
+      "case_id": "gauge-demo",
+      "claim_sha256": "d112eb00b3094a5874a3d16e1d0342fc2ed87e112f73ab89545a333f38bd118c",
+      "revision_id": "",
+      "unlocked": false
+    },
+    "real_source_case": {
+      "consensus_status": "UNDETERMINED",
+      "transaction_hash": "0xf576cd8f73a32d04b82785ee948c79eb5c53c3f32092af7d5839771033d8152e",
+      "decision_persisted": false,
+      "leader_proposal": {
+        "count": 1,
+        "qualified": false,
+        "verified_origin_ids": [
+          "origin_apollo11_crew"
+        ]
+      },
+      "validator_votes": {
+        "0x1B490819e040562a5fb40CD64B1c70D4419c38d1": "disagree",
+        "0x4eeaD269a60bB89c98a23c1BCd0bd101CafD90E0": "agree",
+        "0x5e880d85a70De78dDEf86236d57c42e73F560615": "disagree",
+        "0x88E148Da14d45c5a5DD2DB25E776eBCBCe0Df539": "disagree",
+        "0xe358f855C96d8E7243836cf986eb037175B9467e": "idle"
+      },
+      "persisted_readback": {
+        "case_id": "apollo11-public",
+        "claim": "Apollo 11's lunar landing site was the Sea of Tranquility.",
+        "claim_sha256": "ae005fc0f13463910943297c16fc35869303189941c5426bce0892da45525085",
+        "count": 0,
+        "is_current": false,
+        "qualified": false,
+        "revision_id": "",
+        "threshold": 2
+      },
+      "retry_performed": false,
+      "diagnostic": "Explorer shows the leader treated the crew landing call as first-hand evidence for one origin. Validator votes split 3 disagree, 1 agree, 1 idle; their local semantic rationales are not exposed in the receipt. The contested first-hand attribution is a plausible cause, not a confirmed cause."
+    },
+    "below_threshold": {
+      "case_id": "gauge-demo",
+      "claim": "Gauge A exceeded 4.0 metres at North Pier on 12 May.",
+      "claim_sha256": "d112eb00b3094a5874a3d16e1d0342fc2ed87e112f73ab89545a333f38bd118c",
+      "count": 1,
+      "documents": [
+        {
+          "claim_quote": "I calibrated Gauge A and read 4.2 metres at North Pier on 12 May.",
+          "claim_supports": true,
+          "doc_id": "A",
+          "first_hand": true,
+          "origin_id": "origin_mira",
+          "origin_quote": "Mira Chen said, 'I calibrated Gauge A and read 4.2 metres",
+          "passage_id": "p-a",
+          "qualifies": true
+        },
+        {
+          "claim_quote": "Mira Chen's 4.2 metre Gauge A reading at North Pier on 12 May",
+          "claim_supports": true,
+          "doc_id": "B",
+          "first_hand": false,
+          "origin_id": "origin_mira",
+          "origin_quote": "credits document A for Mira Chen's 4.2 metre Gauge A reading",
+          "passage_id": "p-b",
+          "qualifies": false
+        },
+        {
+          "claim_quote": "the 4.2 metre Gauge A observation at North Pier on 12 May",
+          "claim_supports": true,
+          "doc_id": "C",
+          "first_hand": false,
+          "origin_id": "origin_mira",
+          "origin_quote": "traces the 4.2 metre Gauge A observation at North Pier on 12 May to A",
+          "passage_id": "p-c",
+          "qualifies": false
+        }
+      ],
+      "evidence_manifest": [
+        {
+          "attribution": "Authored fictional test material by the Quorum of Sources fixture author.",
+          "content_sha256": "9395aec913334c4aebd7fa556066fa090dbfd93886c6e0629ba3af0e1e47b676",
+          "doc_id": "A",
+          "origin_candidates": [
+            {
+              "description": "Mira Chen, observer named in document A.",
+              "origin_id": "origin_mira"
+            }
+          ],
+          "passage": "AUTHORED TEST MATERIAL. Fictional report: Mira Chen said, 'I calibrated Gauge A and read 4.2 metres at North Pier on 12 May.'",
+          "passage_id": "p-a",
+          "source_mode": "FIXTURE",
+          "source_ref": "fixture://quorum-of-sources/authored/a"
+        },
+        {
+          "attribution": "Authored fictional test material by the Quorum of Sources fixture author.",
+          "content_sha256": "45ccf7bd651a88a64e6b9644e2031650eabac857a3711abb9e6140bf5776ed23",
+          "doc_id": "B",
+          "origin_candidates": [
+            {
+              "description": "Mira Chen, observer named in document A.",
+              "origin_id": "origin_mira"
+            }
+          ],
+          "passage": "AUTHORED TEST MATERIAL. A rewritten account credits document A for Mira Chen's 4.2 metre Gauge A reading at North Pier on 12 May.",
+          "passage_id": "p-b",
+          "source_mode": "FIXTURE",
+          "source_ref": "fixture://quorum-of-sources/authored/b"
+        },
+        {
+          "attribution": "Authored fictional test material by the Quorum of Sources fixture author.",
+          "content_sha256": "3b41146ebd5418575e860efe8a567bfb8017249e0678025febb1969a1f5f8e0d",
+          "doc_id": "C",
+          "origin_candidates": [
+            {
+              "description": "Mira Chen, observer named in document A.",
+              "origin_id": "origin_mira"
+            }
+          ],
+          "passage": "AUTHORED TEST MATERIAL. This retelling repeats B and traces the 4.2 metre Gauge A observation at North Pier on 12 May to A.",
+          "passage_id": "p-c",
+          "source_mode": "FIXTURE",
+          "source_ref": "fixture://quorum-of-sources/authored/c"
+        }
+      ],
+      "is_current": true,
+      "manifest_sha256": "15604df343843edf9c6ac804943f2eaa425e9fb035773d3e4dbf019b5a1aa5cb",
+      "qualified": false,
+      "revision_id": "rev-6d21bcfeae71b642e7f164eed02aee7d9e89d1d4e6d6d0e489427ffbd9a57458",
+      "threshold": 2,
+      "verified_origin_ids": [
+        "origin_mira"
+      ]
+    },
+    "above_threshold": {
+      "case_id": "gauge-demo",
+      "claim": "Gauge A exceeded 4.0 metres at North Pier on 12 May.",
+      "claim_sha256": "d112eb00b3094a5874a3d16e1d0342fc2ed87e112f73ab89545a333f38bd118c",
+      "count": 2,
+      "documents": [
+        {
+          "claim_quote": "I calibrated Gauge A and read 4.2 metres at North Pier on 12 May.",
+          "claim_supports": true,
+          "doc_id": "A",
+          "first_hand": true,
+          "origin_id": "origin_mira",
+          "origin_quote": "Mira Chen said",
+          "passage_id": "p-a",
+          "qualifies": true
+        },
+        {
+          "claim_quote": "4.2 metre Gauge A reading at North Pier on 12 May",
+          "claim_supports": true,
+          "doc_id": "B",
+          "first_hand": false,
+          "origin_id": "origin_mira",
+          "origin_quote": "credits document A for Mira Chen's",
+          "passage_id": "p-b",
+          "qualifies": false
+        },
+        {
+          "claim_quote": "4.2 metre Gauge A observation at North Pier on 12 May",
+          "claim_supports": true,
+          "doc_id": "C",
+          "first_hand": false,
+          "origin_id": "origin_mira",
+          "origin_quote": "This retelling repeats B and traces the 4.2 metre Gauge A observation at North Pier on 12 May to A.",
+          "passage_id": "p-c",
+          "qualifies": false
+        },
+        {
+          "claim_quote": "we separately calibrated Gauge A and recorded 4.1 metres at North Pier on 12 May.",
+          "claim_supports": true,
+          "doc_id": "D",
+          "first_hand": true,
+          "origin_id": "origin_delta",
+          "origin_quote": "We are the Delta team",
+          "passage_id": "p-d",
+          "qualifies": true
+        }
+      ],
+      "evidence_manifest": [
+        {
+          "attribution": "Authored fictional test material by the Quorum of Sources fixture author.",
+          "content_sha256": "9395aec913334c4aebd7fa556066fa090dbfd93886c6e0629ba3af0e1e47b676",
+          "doc_id": "A",
+          "origin_candidates": [
+            {
+              "description": "Mira Chen, observer named in document A.",
+              "origin_id": "origin_mira"
+            }
+          ],
+          "passage": "AUTHORED TEST MATERIAL. Fictional report: Mira Chen said, 'I calibrated Gauge A and read 4.2 metres at North Pier on 12 May.'",
+          "passage_id": "p-a",
+          "source_mode": "FIXTURE",
+          "source_ref": "fixture://quorum-of-sources/authored/a"
+        },
+        {
+          "attribution": "Authored fictional test material by the Quorum of Sources fixture author.",
+          "content_sha256": "45ccf7bd651a88a64e6b9644e2031650eabac857a3711abb9e6140bf5776ed23",
+          "doc_id": "B",
+          "origin_candidates": [
+            {
+              "description": "Mira Chen, observer named in document A.",
+              "origin_id": "origin_mira"
+            }
+          ],
+          "passage": "AUTHORED TEST MATERIAL. A rewritten account credits document A for Mira Chen's 4.2 metre Gauge A reading at North Pier on 12 May.",
+          "passage_id": "p-b",
+          "source_mode": "FIXTURE",
+          "source_ref": "fixture://quorum-of-sources/authored/b"
+        },
+        {
+          "attribution": "Authored fictional test material by the Quorum of Sources fixture author.",
+          "content_sha256": "3b41146ebd5418575e860efe8a567bfb8017249e0678025febb1969a1f5f8e0d",
+          "doc_id": "C",
+          "origin_candidates": [
+            {
+              "description": "Mira Chen, observer named in document A.",
+              "origin_id": "origin_mira"
+            }
+          ],
+          "passage": "AUTHORED TEST MATERIAL. This retelling repeats B and traces the 4.2 metre Gauge A observation at North Pier on 12 May to A.",
+          "passage_id": "p-c",
+          "source_mode": "FIXTURE",
+          "source_ref": "fixture://quorum-of-sources/authored/c"
+        },
+        {
+          "attribution": "Authored fictional test material by the Quorum of Sources fixture author.",
+          "content_sha256": "d16cfcb90a7927d19a7c42eb3a54590201dc5227b2b1f918b43397ec1b78dafa",
+          "doc_id": "D",
+          "origin_candidates": [
+            {
+              "description": "Mira Chen, observer named in document A.",
+              "origin_id": "origin_mira"
+            },
+            {
+              "description": "Delta team members reporting their own calibrated measurement.",
+              "origin_id": "origin_delta"
+            }
+          ],
+          "passage": "AUTHORED TEST MATERIAL. We are the Delta team; we separately calibrated Gauge A and recorded 4.1 metres at North Pier on 12 May. The Mira Chen report from A is background only.",
+          "passage_id": "p-d",
+          "source_mode": "FIXTURE",
+          "source_ref": "fixture://quorum-of-sources/authored/d"
+        }
+      ],
+      "is_current": true,
+      "manifest_sha256": "8a4e3ca1cced7006e4c729ac72e71447613edc199880e43f3e1a0e3b424d4130",
+      "qualified": true,
+      "revision_id": "rev-c1a3aaf3b843ab0a6cfd43fe131287d5a03f38ec8ec7d05e142036a660680591",
+      "threshold": 2,
+      "verified_origin_ids": [
+        "origin_delta",
+        "origin_mira"
+      ]
+    },
+    "stale_revision": {
+      "case_id": "gauge-demo",
+      "claim": "Gauge A exceeded 4.0 metres at North Pier on 12 May.",
+      "claim_sha256": "d112eb00b3094a5874a3d16e1d0342fc2ed87e112f73ab89545a333f38bd118c",
+      "count": 1,
+      "documents": [
+        {
+          "claim_quote": "I calibrated Gauge A and read 4.2 metres at North Pier on 12 May.",
+          "claim_supports": true,
+          "doc_id": "A",
+          "first_hand": true,
+          "origin_id": "origin_mira",
+          "origin_quote": "Mira Chen said, 'I calibrated Gauge A and read 4.2 metres",
+          "passage_id": "p-a",
+          "qualifies": true
+        },
+        {
+          "claim_quote": "Mira Chen's 4.2 metre Gauge A reading at North Pier on 12 May",
+          "claim_supports": true,
+          "doc_id": "B",
+          "first_hand": false,
+          "origin_id": "origin_mira",
+          "origin_quote": "credits document A for Mira Chen's 4.2 metre Gauge A reading",
+          "passage_id": "p-b",
+          "qualifies": false
+        },
+        {
+          "claim_quote": "the 4.2 metre Gauge A observation at North Pier on 12 May",
+          "claim_supports": true,
+          "doc_id": "C",
+          "first_hand": false,
+          "origin_id": "origin_mira",
+          "origin_quote": "traces the 4.2 metre Gauge A observation at North Pier on 12 May to A",
+          "passage_id": "p-c",
+          "qualifies": false
+        }
+      ],
+      "evidence_manifest": [
+        {
+          "attribution": "Authored fictional test material by the Quorum of Sources fixture author.",
+          "content_sha256": "9395aec913334c4aebd7fa556066fa090dbfd93886c6e0629ba3af0e1e47b676",
+          "doc_id": "A",
+          "origin_candidates": [
+            {
+              "description": "Mira Chen, observer named in document A.",
+              "origin_id": "origin_mira"
+            }
+          ],
+          "passage": "AUTHORED TEST MATERIAL. Fictional report: Mira Chen said, 'I calibrated Gauge A and read 4.2 metres at North Pier on 12 May.'",
+          "passage_id": "p-a",
+          "source_mode": "FIXTURE",
+          "source_ref": "fixture://quorum-of-sources/authored/a"
+        },
+        {
+          "attribution": "Authored fictional test material by the Quorum of Sources fixture author.",
+          "content_sha256": "45ccf7bd651a88a64e6b9644e2031650eabac857a3711abb9e6140bf5776ed23",
+          "doc_id": "B",
+          "origin_candidates": [
+            {
+              "description": "Mira Chen, observer named in document A.",
+              "origin_id": "origin_mira"
+            }
+          ],
+          "passage": "AUTHORED TEST MATERIAL. A rewritten account credits document A for Mira Chen's 4.2 metre Gauge A reading at North Pier on 12 May.",
+          "passage_id": "p-b",
+          "source_mode": "FIXTURE",
+          "source_ref": "fixture://quorum-of-sources/authored/b"
+        },
+        {
+          "attribution": "Authored fictional test material by the Quorum of Sources fixture author.",
+          "content_sha256": "3b41146ebd5418575e860efe8a567bfb8017249e0678025febb1969a1f5f8e0d",
+          "doc_id": "C",
+          "origin_candidates": [
+            {
+              "description": "Mira Chen, observer named in document A.",
+              "origin_id": "origin_mira"
+            }
+          ],
+          "passage": "AUTHORED TEST MATERIAL. This retelling repeats B and traces the 4.2 metre Gauge A observation at North Pier on 12 May to A.",
+          "passage_id": "p-c",
+          "source_mode": "FIXTURE",
+          "source_ref": "fixture://quorum-of-sources/authored/c"
+        }
+      ],
+      "is_current": false,
+      "manifest_sha256": "15604df343843edf9c6ac804943f2eaa425e9fb035773d3e4dbf019b5a1aa5cb",
+      "qualified": false,
+      "revision_id": "rev-6d21bcfeae71b642e7f164eed02aee7d9e89d1d4e6d6d0e489427ffbd9a57458",
+      "threshold": 2,
+      "verified_origin_ids": [
+        "origin_mira"
+      ]
+    },
+    "consumer_unlocked": {
+      "case_id": "gauge-demo",
+      "claim_sha256": "d112eb00b3094a5874a3d16e1d0342fc2ed87e112f73ab89545a333f38bd118c",
+      "revision_id": "rev-c1a3aaf3b843ab0a6cfd43fe131287d5a03f38ec8ec7d05e142036a660680591",
+      "unlocked": true
+    }
+  },
+  "source_fetch": {
+    "url": "https://www.nasa.gov/wp-content/uploads/static/history/alsj/a11/a11ov.html",
+    "sha256": "0e4db52d8496a0904eb14901c0eb5a52fddf6108698f938482e7aabb0d1b737a",
+    "mode": "FETCH"
+  },
+  "fee_policy": {
+    "source": "sim_getFeeConfig.defaultFees plus 12,000 bps padding from the latest finalized StudioNet receipt recommendation",
+    "enabled": true,
+    "default_distribution": {
+      "leaderTimeunitsAllocation": "100",
+      "validatorTimeunitsAllocation": "200",
+      "appealRounds": "0",
+      "executionBudgetPerRound": "78852000000000",
+      "executionConsumed": "0",
+      "totalMessageFees": "0",
+      "rotations": [
+        "0"
+      ],
+      "maxPriceGenPerTimeUnit": "2",
+      "storageFeeMaxGasPrice": "300000000",
+      "receiptFeeMaxGasPrice": "300000000"
+    },
+    "default_fee_value_wei": "78852000002588",
+    "distribution": {
+      "leaderTimeunitsAllocation": "100",
+      "validatorTimeunitsAllocation": "200",
+      "appealRounds": "0",
+      "executionBudgetPerRound": "96825600000000",
+      "executionConsumed": "0",
+      "totalMessageFees": "0",
+      "rotations": [
+        "0"
+      ],
+      "maxPriceGenPerTimeUnit": "2",
+      "storageFeeMaxGasPrice": "300000000",
+      "receiptFeeMaxGasPrice": "300000000"
+    },
+    "submitted_fee_value_wei": "96825600002588",
+    "observed_latest_execution_fee_wei": "80688000000000",
+    "execution_padding_bps": 12000
+  },
+  "fee_quotes": [
+    {
+      "transaction_label": "open-apollo11-public-case",
+      "distribution": {
+        "leaderTimeunitsAllocation": "100",
+        "validatorTimeunitsAllocation": "200",
+        "appealRounds": "0",
+        "executionBudgetPerRound": "94353600000000",
+        "executionConsumed": "0",
+        "totalMessageFees": "0",
+        "rotations": [
+          "0"
+        ],
+        "maxPriceGenPerTimeUnit": "2",
+        "storageFeeMaxGasPrice": "300000000",
+        "receiptFeeMaxGasPrice": "300000000"
+      },
+      "submitted_fee_value_wei": "94353600002588",
+      "source": "sim_getFeeConfig.defaultFees plus 12,000 bps execution budget padding"
+    },
+    {
+      "transaction_label": "append-apollo11-nasa",
+      "distribution": {
+        "leaderTimeunitsAllocation": "100",
+        "validatorTimeunitsAllocation": "200",
+        "appealRounds": "0",
+        "executionBudgetPerRound": "94353600000000",
+        "executionConsumed": "0",
+        "totalMessageFees": "0",
+        "rotations": [
+          "0"
+        ],
+        "maxPriceGenPerTimeUnit": "2",
+        "storageFeeMaxGasPrice": "300000000",
+        "receiptFeeMaxGasPrice": "300000000"
+      },
+      "submitted_fee_value_wei": "94353600002588",
+      "source": "sim_getFeeConfig.defaultFees plus 12,000 bps execution budget padding"
+    },
+    {
+      "transaction_label": "adjudicate-apollo11-public",
+      "distribution": {
+        "leaderTimeunitsAllocation": "100",
+        "validatorTimeunitsAllocation": "200",
+        "appealRounds": "0",
+        "executionBudgetPerRound": "94353600000000",
+        "executionConsumed": "0",
+        "totalMessageFees": "0",
+        "rotations": [
+          "0"
+        ],
+        "maxPriceGenPerTimeUnit": "2",
+        "storageFeeMaxGasPrice": "300000000",
+        "receiptFeeMaxGasPrice": "300000000"
+      },
+      "submitted_fee_value_wei": "94353600002588",
+      "source": "sim_getFeeConfig.defaultFees plus 12,000 bps execution budget padding"
+    },
+    {
+      "transaction_label": "append-gauge-demo-a",
+      "distribution": {
+        "leaderTimeunitsAllocation": "100",
+        "validatorTimeunitsAllocation": "200",
+        "appealRounds": "0",
+        "executionBudgetPerRound": "96825600000000",
+        "executionConsumed": "0",
+        "totalMessageFees": "0",
+        "rotations": [
+          "0"
+        ],
+        "maxPriceGenPerTimeUnit": "2",
+        "storageFeeMaxGasPrice": "300000000",
+        "receiptFeeMaxGasPrice": "300000000"
+      },
+      "submitted_fee_value_wei": "96825600002588",
+      "source": "sim_getFeeConfig.defaultFees plus 12,000 bps execution budget padding from the latest finalized StudioNet receipt"
+    },
+    {
+      "transaction_label": "append-gauge-demo-b",
+      "distribution": {
+        "leaderTimeunitsAllocation": "100",
+        "validatorTimeunitsAllocation": "200",
+        "appealRounds": "0",
+        "executionBudgetPerRound": "96825600000000",
+        "executionConsumed": "0",
+        "totalMessageFees": "0",
+        "rotations": [
+          "0"
+        ],
+        "maxPriceGenPerTimeUnit": "2",
+        "storageFeeMaxGasPrice": "300000000",
+        "receiptFeeMaxGasPrice": "300000000"
+      },
+      "submitted_fee_value_wei": "96825600002588",
+      "source": "sim_getFeeConfig.defaultFees plus 12,000 bps execution budget padding from the latest finalized StudioNet receipt"
+    },
+    {
+      "transaction_label": "append-gauge-demo-c",
+      "distribution": {
+        "leaderTimeunitsAllocation": "100",
+        "validatorTimeunitsAllocation": "200",
+        "appealRounds": "0",
+        "executionBudgetPerRound": "96825600000000",
+        "executionConsumed": "0",
+        "totalMessageFees": "0",
+        "rotations": [
+          "0"
+        ],
+        "maxPriceGenPerTimeUnit": "2",
+        "storageFeeMaxGasPrice": "300000000",
+        "receiptFeeMaxGasPrice": "300000000"
+      },
+      "submitted_fee_value_wei": "96825600002588",
+      "source": "sim_getFeeConfig.defaultFees plus 12,000 bps execution budget padding from the latest finalized StudioNet receipt"
+    },
+    {
+      "transaction_label": "adjudicate-gauge-below-threshold",
+      "distribution": {
+        "leaderTimeunitsAllocation": "100",
+        "validatorTimeunitsAllocation": "200",
+        "appealRounds": "0",
+        "executionBudgetPerRound": "96825600000000",
+        "executionConsumed": "0",
+        "totalMessageFees": "0",
+        "rotations": [
+          "0"
+        ],
+        "maxPriceGenPerTimeUnit": "2",
+        "storageFeeMaxGasPrice": "300000000",
+        "receiptFeeMaxGasPrice": "300000000"
+      },
+      "submitted_fee_value_wei": "96825600002588",
+      "source": "sim_getFeeConfig.defaultFees plus 12,000 bps execution budget padding from the latest finalized StudioNet receipt"
+    },
+    {
+      "transaction_label": "append-gauge-demo-d",
+      "distribution": {
+        "leaderTimeunitsAllocation": "100",
+        "validatorTimeunitsAllocation": "200",
+        "appealRounds": "0",
+        "executionBudgetPerRound": "96825600000000",
+        "executionConsumed": "0",
+        "totalMessageFees": "0",
+        "rotations": [
+          "0"
+        ],
+        "maxPriceGenPerTimeUnit": "2",
+        "storageFeeMaxGasPrice": "300000000",
+        "receiptFeeMaxGasPrice": "300000000"
+      },
+      "submitted_fee_value_wei": "96825600002588",
+      "source": "sim_getFeeConfig.defaultFees plus 12,000 bps execution budget padding from the latest finalized StudioNet receipt"
+    },
+    {
+      "transaction_label": "adjudicate-gauge-above-threshold",
+      "distribution": {
+        "leaderTimeunitsAllocation": "100",
+        "validatorTimeunitsAllocation": "200",
+        "appealRounds": "0",
+        "executionBudgetPerRound": "96825600000000",
+        "executionConsumed": "0",
+        "totalMessageFees": "0",
+        "rotations": [
+          "0"
+        ],
+        "maxPriceGenPerTimeUnit": "2",
+        "storageFeeMaxGasPrice": "300000000",
+        "receiptFeeMaxGasPrice": "300000000"
+      },
+      "submitted_fee_value_wei": "96825600002588",
+      "source": "sim_getFeeConfig.defaultFees plus 12,000 bps execution budget padding from the latest finalized StudioNet receipt"
+    },
+    {
+      "transaction_label": "unlock-consumer-entitlement",
+      "distribution": {
+        "leaderTimeunitsAllocation": "100",
+        "validatorTimeunitsAllocation": "200",
+        "appealRounds": "0",
+        "executionBudgetPerRound": "96825600000000",
+        "executionConsumed": "0",
+        "totalMessageFees": "0",
+        "rotations": [
+          "0"
+        ],
+        "maxPriceGenPerTimeUnit": "2",
+        "storageFeeMaxGasPrice": "300000000",
+        "receiptFeeMaxGasPrice": "300000000"
+      },
+      "submitted_fee_value_wei": "96825600002588",
+      "source": "sim_getFeeConfig.defaultFees plus 12,000 bps execution budget padding from the latest finalized StudioNet receipt"
+    }
+  ],
+  "proof_manifest": "proofs\\proof_manifest.json"
+}

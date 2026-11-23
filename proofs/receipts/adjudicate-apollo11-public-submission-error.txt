@@ -1,0 +1,16 @@
+[genlayer-js] initializeConsensusSmartContract() is deprecated and will be removed in a future release. The consensus contract is now resolved from the static chain definition.
+- Calling write method adjudicate on contract at 0x610CCe277eaca01145D0A56dB0100D21026aCEa1...
+
+Fee deposit: 94353600002588 wei (~0.000094353600002588 GEN)
+
+Write Transaction Hash:
+0xf576cd8f73a32d04b82785ee948c79eb5c53c3f32092af7d5839771033d8152e
+
+Error:
+Error: Write 0xf576cd8f73a32d04b82785ee948c79eb5c53c3f32092af7d5839771033d8152e transaction was decided as UNDETERMINED (no validator majority); leader execution result: FINISHED_WITH_RETURN.
+    at assertSuccessfulExecution (file:///C:/Users/User/AppData/Local/Temp/quorum-of-sources-cli-0.40.0-rc2/node_modules/genlayer/dist/index.js:57601:9)
+    at WriteAction.write (file:///C:/Users/User/AppData/Local/Temp/quorum-of-sources-cli-0.40.0-rc2/node_modules/genlayer/dist/index.js:57826:7)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async Command.<anonymous> (file:///C:/Users/User/AppData/Local/Temp/quorum-of-sources-cli-0.40.0-rc2/node_modules/genlayer/dist/index.js:58096:5)
+
+× Error during write operation

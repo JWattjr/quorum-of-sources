@@ -1,0 +1,23 @@
+{
+  "label": "deploy-registry",
+  "hash": "0x394d4c75ccd5a9d72fe65f47a884b152103403a779c39be946f0f02b80de7aca",
+  "status": "REJECTED_PRECONSENSUS",
+  "network": "StudioNet",
+  "chain_id": 61999,
+  "cli": "0.40.0-rc2",
+  "submitted_fee_value_wei": "78852000001100",
+  "studio_default_fee_value_wei": "78852000002588",
+  "evm_receipt": {
+    "status": "0x0",
+    "blockNumber": "0x0",
+    "gasUsed": "0x0",
+    "revertReason": "InsufficientFees"
+  },
+  "genlayer_status": {
+    "error_code": -32001,
+    "message": "Transaction not found"
+  },
+  "conclusion": "No consensus transaction or contract deployment was created.",
+  "transcript": "deploy-registry-submission-error.txt",
+  "observed_at_utc": "2026-11-23T16:33:43Z"
+}
